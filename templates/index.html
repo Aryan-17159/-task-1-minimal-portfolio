@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sai Aryan · Portfolio</title>
+    <meta
+      name="description"
+      content="Sai Aryan's personal portfolio. Computer science, web development and selected work."
+    />
+    <link rel="stylesheet" href="/static/base.css" />
+    <link rel="stylesheet" href="/static/site.css" />
+  </head>
+  <body>
+    <div class="portfolio">
+      <aside>
+        <a class="identity" href="#"
+          ><span class="initials">sa</span><strong>Sai Aryan</strong
+          ><span>Computer science student</span></a
+        >
+        <nav aria-label="Sections">
+          <a href="#about" class="active">About</a
+          ><a href="#work">Selected work</a><a href="#experience">Background</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <div class="side-links">
+          <a
+            href="https://github.com/Aryan-17159"
+            target="_blank"
+            rel="noopener"
+            >GitHub <span>→</span></a
+          ><a href="#contact">Get in touch <span>→</span></a>
+        </div>
+        <span class="location">India · <span id="local-time"></span></span>
+      </aside>
+      <main>
+        <section id="about" class="intro">
+          <span class="section-label">About</span>
+          <h1>Hi, I’m Aryan.</h1>
+          <p class="lead">
+            I’m a computer science student interested in building useful
+            software and understanding how it works.
+          </p>
+          <p>
+            I work with Python, web technologies, and databases. My current
+            projects explore the full path from an interface to the application
+            behind it.
+          </p>
+          <a class="quiet-link" href="#work"
+            >Explore selected work <span>↓</span></a
+          >
+        </section>
+        <section id="work">
+          <div class="section-heading">
+            <span class="section-label">Selected work</span
+            ><span class="year">2026</span>
+          </div>
+          <div id="projects"><p class="loading">Loading projects…</p></div>
+        </section>
+        <section id="experience">
+          <span class="section-label">Background</span>
+          <div class="background-row">
+            <span class="muted small">Education</span>
+            <div>
+              <h3>Jain University</h3>
+              <p>B.Tech · Computer Science</p>
+            </div>
+          </div>
+          <div class="background-row">
+            <span class="muted small">Working with</span>
+            <div class="skills">
+              <span>Python</span><span>JavaScript</span><span>HTML & CSS</span
+              ><span>SQL</span><span>Git</span><span>Flask</span>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <span class="section-label">Contact</span>
+          <h2>Let’s get in touch.</h2>
+          <p class="contact-copy">
+            For a project, an opportunity, or a question.<br />Leave a message
+            and I’ll get back to you.
+          </p>
+          <form id="contact-form">
+            <div class="form-row">
+              <label
+                >Name<input
+                  name="name"
+                  required
+                  maxlength="80"
+                  autocomplete="name"
+                  placeholder="Your name" /></label
+              ><label
+                >Email<input
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@example.com"
+              /></label>
+            </div>
+            <label
+              >Message<textarea
+                name="message"
+                required
+                maxlength="5000"
+                rows="4"
+                placeholder="What would you like to discuss?"
+              ></textarea></label
+            ><button class="button primary" type="submit">Send message</button>
+            <p id="contact-status" role="status"></p>
+          </form>
+        </section>
+        <footer>
+          <span>© <span id="year"></span> Sai Aryan</span
+          ><a href="#about">Back to top ↑</a>
+        </footer>
+      </main>
+    </div>
+    <dialog id="project-dialog">
+      <div class="dialog-head">
+        <h2 id="project-title"></h2>
+        <button class="icon-button" aria-label="Close">×</button>
+      </div>
+      <p id="project-detail"></p>
+      <div id="project-tags" class="skills"></div>
+    </dialog>
+    <script src="/static/common.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
