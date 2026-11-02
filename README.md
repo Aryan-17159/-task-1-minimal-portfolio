@@ -1,1 +1,1 @@
-# -task-1-minimal-portfolio
+# task-1-minimal-portfolio
