@@ -60,15 +60,13 @@ API coverage: Project seed data, contact validation, rate limits, CSRF protectio
 
 The browser flows were also exercised at 1440px and 390px, with no JavaScript errors or horizontal overflow. Screenshots are from those local checks. Automated database tests use SQLite; PostgreSQL concurrency has not been load-tested.
 
-## Publish as a separate repository
+## Repository
 
-Suggested repository: `Aryan-17159/task-1-minimal-portfolio`. From this directory, after signing into GitHub CLI with an account allowed to create repositories:
+[View this project on GitHub](https://github.com/Aryan-17159/-task-1-minimal-portfolio).
 
 ```sh
-git init -b main
-git add .
-git commit -m "Build minimal portfolio application"
-gh repo create Aryan-17159/task-1-minimal-portfolio --public --source=. --remote=origin --push
+git clone https://github.com/Aryan-17159/-task-1-minimal-portfolio.git
+cd -- -task-1-minimal-portfolio
 ```
 
-If this directory already has a Git history, skip the initialization and commit steps. Never commit `.env`, runtime databases, or credentials.
+Follow the setup instructions above. Never commit `.env`, runtime databases, or credentials.
